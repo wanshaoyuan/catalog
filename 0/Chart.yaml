@@ -1,0 +1,8 @@
+apiVersion: v1
+description: A Rancher 2.0 App store for Sock Shop
+name: sockshop
+version: 0.1.0
+description: Rancher && Michelin POC
+icon: http://ohx02qrb8.bkt.clouddn.com/micheling.png
+
+

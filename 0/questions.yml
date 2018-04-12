@@ -1,0 +1,8 @@
+questions:
+- variable: replicaCount
+  default: "1"
+  description: "Replica count"
+  type: string
+  required: true
+  label: Replicas
+
