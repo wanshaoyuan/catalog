@@ -30,15 +30,3 @@ spec:
           runAsUser: 10001
           capabilities:
           readOnlyRootFilesystem: true
-        livenessProbe:
-          httpGet:
-            path: /
-            port: 8079
-          initialDelaySeconds: 300
-          periodSeconds: 3
-        readinessProbe:
-          httpGet:
-            path: /
-            port: 8079
-          initialDelaySeconds: 30
-          periodSeconds: 3
