@@ -2,7 +2,7 @@ questions:
 - variable: replicaCount
   default: "1"
   description: "Replica count"
-  type: string
+  type: multiline 
   required: true
   label: Replicas
 
