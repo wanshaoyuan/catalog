@@ -1,0 +1,20 @@
+stages:
+- name: updatecatalog
+  steps:
+  - publishCatalogConfig:
+      path: ./sock-shap/0
+      catalogTemplate: sock-shap
+      version: v0.01${CICD_GIT_COMMIT}
+      gitUrl: https://github.com/wanshaoyuan/catalog.git
+      gitBranch: master
+      gitAuthor: wanshaoyuan
+      gitEmail: wanshaoyuan@gmail.com
+    envFrom:
+    - sourceName: catalog
+      sourceKey: USERNAME
+      targetKey: USERNAME
+    - sourceName: catalog
+      sourceKey: PASSWORD
+      targetKey: PASSWORD
+timeout: 60
+notification: {}
