@@ -4,7 +4,7 @@ stages:
   - publishCatalogConfig:
       path: ./sock-shap/0
       catalogTemplate: sock-shap
-      version: v0.01${CICD_GIT_COMMIT}
+      version: v0.01${CICD_GIT_COMMIT}$
       gitUrl: https://github.com/wanshaoyuan/catalog.git
       gitBranch: master
       gitAuthor: wanshaoyuan
